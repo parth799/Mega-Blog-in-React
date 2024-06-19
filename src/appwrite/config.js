@@ -130,7 +130,7 @@ export class Service {
 
     async getFile(fileId) {
         try {
-            const file = await this.bucket.getFile(conf.appwriteBuketId, fileId);
+            const file = await this.bucket.getFilePreview(conf.appwriteBuketId, fileId);
             return file;
         } catch (error) {
             console.log("Appwrite serive :: GetFile :: error", error);
