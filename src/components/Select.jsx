@@ -1,5 +1,5 @@
 
-import React, { useId } from 'react';
+import React, {forwardRef, useId } from 'react';
 import PropTypes from 'prop-types';
 
 const Select = React.forwardRef(function Select(
@@ -37,4 +37,4 @@ Select.propTypes = {
   className: PropTypes.string,
 };
 
-export default React.forwardRef(Select);
+export default Select;
