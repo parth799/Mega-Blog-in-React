@@ -42,16 +42,20 @@ function Signup() {
             <Input
               type="text"
               id="password"
-              placeholder="Enter your password"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-opacity-50"
+              placeholder="Enter your Name"
+              className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
               {...register("name", {required:true})}
               
             />
           </div>
+          <label htmlFor="password" className="text-sm font-medium text-gray-700">
+                Email
+              </label>
           <Input
                 type="email"
                 name="email"
                 id="email"
+              placeholder="Enter your Email"
                 autoComplete="email"
                 className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 {...register('email', { required: true, pattern: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/ || "email address nust be a valid address" })}
@@ -67,6 +71,8 @@ function Signup() {
                 type="password"
                 name="password"
                 id="password"
+              placeholder="Enter your password"
+
                 autoComplete="current-password"
                 className="block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 {...register('password', { required: true, minLength: 8 })}

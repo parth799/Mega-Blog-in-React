@@ -1,6 +1,6 @@
-/* eslint-disable react-refresh/only-export-components */
-/* eslint-disable react/prop-types */
+
 import React, { useId } from 'react';
+import PropTypes from 'prop-types';
 
 const Select = React.forwardRef(function Select(
   { options, label, className = '', ...props },
@@ -30,5 +30,11 @@ const Select = React.forwardRef(function Select(
     </div>
   );
 });
+
+Select.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  label: PropTypes.string,
+  className: PropTypes.string,
+};
 
 export default React.forwardRef(Select);

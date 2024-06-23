@@ -1,5 +1,5 @@
 /* eslint-disable no-useless-catch */
-import conf from "../conf.js";
+import conf from "../conf/conf.js";
 import { Client, Databases, Storage, Query, ID } from "appwrite";
 
 export class Service {

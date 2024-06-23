@@ -1,4 +1,4 @@
-import { Container,  PostForm} from "postcss"
+import { Container,  PostForm} from "../components/index"
 
 function AddPost() {
   return (
